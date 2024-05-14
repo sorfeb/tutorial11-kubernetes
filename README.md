@@ -17,4 +17,5 @@ What is the purpose of the `-n` option and why did the output not list the pods/
 explicitly created?
 > Hint: Do some reading about [Namespace in Kubernetes
 documentation](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/).
-The `-n` option is crucial for specifying and operating within different **namespaces**.
+
+The `-n` option is crucial for specifying and operating within different **namespaces**. If `-n` isn't specified in the command, then it will operate the command in the `default` namespace. If the output does not list the pods/services you have explicitly created, it could be due to the resources that have been created are in a **different namespace**
