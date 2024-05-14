@@ -9,7 +9,7 @@
 
 **After Service**
 ![image](https://github.com/sorfeb/tutorial11-kubernetes/assets/112263712/b47a2abb-0dcd-4271-8495-e14a9a0f488a)
-
+After exposing the pod as a Service, the pod can receive external requests. When I tried to open the app several times while it is running, the number of requests are recorded in the logs, causing it to increase.
 
 3. Notice that there are two versions of `kubectl get` invocation during this tutorial section. The first does not have any option, while the latter has `-n` option with value set to
 `kube-system`.
